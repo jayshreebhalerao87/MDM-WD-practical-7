@@ -1,0 +1,105 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Study Portal</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-green-400 via-teal-500 to-cyan-600 flex items-center justify-center">
+
+    <!-- Main Container -->
+    <div class="w-[480px] max-w-[90%] bg-white rounded-2xl shadow-2xl p-10">
+
+        <!-- Heading -->
+        <h1 class="text-3xl font-bold text-center text-teal-600 mb-3">
+            Student Study Portal
+        </h1>
+
+        <p class="text-center text-gray-600 text-lg mb-7">
+            Frequently Asked Questions
+        </p>
+
+
+        <!-- Question 1 -->
+        <div onclick="showAnswer(0)"
+             class="question bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg cursor-pointer mb-1 transition">
+            How can I prepare for exams effectively?
+        </div>
+
+        <div class="answer hidden bg-teal-50 text-gray-700 p-4 mb-3 leading-relaxed rounded-b-lg">
+            Create a study timetable, revise regularly, practice previous
+            questions, and take short breaks during long study sessions.
+        </div>
+
+
+        <!-- Question 2 -->
+        <div onclick="showAnswer(1)"
+             class="question bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg cursor-pointer mb-1 transition">
+            How can I improve my programming skills?
+        </div>
+
+        <div class="answer hidden bg-teal-50 text-gray-700 p-4 mb-3 leading-relaxed rounded-b-lg">
+            Practice coding every day, understand basic concepts clearly,
+            solve programming problems, and build small projects.
+        </div>
+
+
+        <!-- Question 3 -->
+        <div onclick="showAnswer(2)"
+             class="question bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg cursor-pointer mb-1 transition">
+            How can I manage my study time?
+        </div>
+
+        <div class="answer hidden bg-teal-50 text-gray-700 p-4 mb-3 leading-relaxed rounded-b-lg">
+            Make a daily schedule, set priorities, avoid unnecessary
+            distractions, and divide large tasks into smaller goals.
+        </div>
+
+
+        <!-- Question 4 -->
+        <div onclick="showAnswer(3)"
+             class="question bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg cursor-pointer mb-1 transition">
+            Where can I find study resources?
+        </div>
+
+        <div class="answer hidden bg-teal-50 text-gray-700 p-4 mb-3 leading-relaxed rounded-b-lg">
+            You can use college notes, textbooks, online courses,
+            educational websites, previous-year papers, and practice tests.
+        </div>
+
+
+        <!-- Question 5 -->
+        <div onclick="showAnswer(4)"
+             class="question bg-teal-500 hover:bg-teal-600 text-white p-4 rounded-lg cursor-pointer mb-1 transition">
+            How can I reduce exam stress?
+        </div>
+
+        <div class="answer hidden bg-teal-50 text-gray-700 p-4 leading-relaxed rounded-b-lg">
+            Prepare in advance, sleep properly, take short breaks,
+            stay organized, and practice relaxation techniques before exams.
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+
+        function showAnswer(index) {
+
+            let answers = document.querySelectorAll(".answer");
+
+            answers[index].classList.toggle("hidden");
+
+        }
+
+    </script>
+
+</body>
+</html>
